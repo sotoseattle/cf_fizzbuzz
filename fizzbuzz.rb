@@ -10,5 +10,3 @@ def fizzbuzz(*args)
 
   return str
 end
-
-fizzbuzz(9)
