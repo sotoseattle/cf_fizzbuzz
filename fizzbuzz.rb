@@ -1,7 +1,6 @@
 
-def fizzbuzz(*args)
-  raise ArgumentError unless args.size==1 and args.first.kind_of?(Fixnum)
-  n = args.first
+def fizzbuzz(n)
+  raise ArgumentError unless n.kind_of?(Fixnum)
 
   str = ""
   str << "Fizz" if n%3==0
