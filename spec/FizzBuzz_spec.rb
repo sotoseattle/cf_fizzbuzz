@@ -25,6 +25,9 @@ RSpec.describe "FizzBuzz Method" do
   end
   it "outputs the number in any other case" do
     expect(fizzbuzz(2)).to eq("2")
+    expect(fizzbuzz(12234871)).to eq("12234871")
+    expect(fizzbuzz(-7)).to eq("-7")
+    expect(fizzbuzz(13)).to eq("13")
   end
 
 end
