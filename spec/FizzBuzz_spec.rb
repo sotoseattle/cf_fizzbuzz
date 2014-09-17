@@ -1,14 +1,14 @@
-require 'rspec'
-require './fizzbuzz'
+require "rspec"
+require "./fizzbuzz"
 
 
 RSpec.describe "FizzBuzz Method" do
 
   it "takes one number as argument" do
-    expect{fizzbuzz(42,32)}.to raise_error
-    expect{fizzbuzz("hola")}.to raise_error
-    expect{fizzbuzz()}.to raise_error
-    expect{fizzbuzz(42)}.not_to raise_error
+    expect{ fizzbuzz(42, 32) }.to raise_error
+    expect{ fizzbuzz("hola") }.to raise_error
+    expect{ fizzbuzz }.to raise_error
+    expect{ fizzbuzz(42) }.not_to raise_error
   end
 
   it "outputs Fizz when multiple of 3" do
@@ -45,6 +45,4 @@ RSpec.describe "FizzBuzz Method" do
     expect(fizzbuzz(13)).not_to eq("Buzz")
     expect(fizzbuzz(13)).not_to eq("FizzBuzz")
   end
-
 end
-
