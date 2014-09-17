@@ -1,6 +1,5 @@
-
 def fizzbuzz(n)
-  raise ArgumentError unless n.kind_of?(Fixnum)
+  raise ArgumentError unless n.is_a?(Fixnum)
   str = ""
   str << "Fizz" if n % 3 == 0
   str << "Buzz" if n % 5 == 0

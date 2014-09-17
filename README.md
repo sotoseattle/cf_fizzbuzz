@@ -14,3 +14,6 @@ My first commit did it in the simplest way possible, with cascading conditionals
 This version is a refactor that I think is simpler to understand, computes only 2 % operations and leverages the power of concatenating strings. I think it is easier to understand and more succint. It has taken me an additional 15 min to think different alternatives.
 
 At the begining I considered making an object playground that just loops in wait for a STDIN, and calls the fizzbuzz method when the user inputs a number. But I run into problems in the way to create the appropriate spec (stubing the :gets call).
+
+
+BLA BLA BLA
