@@ -1,19 +1,26 @@
 # FizzBuzz
 
-A single method that takes one number as an argument. For multiples of three it returns “Fizz”, for multiples of five it returns “Buzz”.
+A Ruby class.
 
-For numbers which are multiples of both three and five it returns “FizzBuzz”, and in all other cases return the number.
+To initialize it pass a file with the pairs multiple and string to output.
 
-I have included a minimum amount of input checking and added a very simple RSpec file to test the basic cases.
+Each pair separated by a single space and in its own line.
 
+```txt
+# ./whatever.txt
+3 Fizz
+5 Buzz
+7 Sivv
+```
 
-#### Considerations:
+To check a number pass it to the method 'fizzbuzz'.
 
-My first commit did it in the simplest way possible, with cascading conditionals. The key for me was to place first the divisible by 15 condition before checking for divisibility by 3 and 5, as to outputting "FizzBuzz" first.
+The output from this method has been extracted for ease of maintenance.
 
-This version is a refactor that I think is simpler to understand, computes only 2 % operations and leverages the power of concatenating strings. I think it is easier to understand and more succint. It has taken me an additional 15 min to think different alternatives.
+Included are RSpec tests for basic functionality.
 
-At the begining I considered making an object playground that just loops in wait for a STDIN, and calls the fizzbuzz method when the user inputs a number. But I run into problems in the way to create the appropriate spec (stubing the :gets call).
-
-
-BLA BLA BLA
+```ruby
+fi = FizzBuzz.new('./whatever.txt')
+fi.fizzbuzz(21)
+=> "FizzBuzzSivv"
+```
