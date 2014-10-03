@@ -1,3 +1,4 @@
+# Modular and flexible FizzBuzz
 class FizzBuzz
   attr_reader :settings
 
